@@ -11,5 +11,6 @@ namespace MyFristProject.Entities
         public string CreateName { get; set; } = string.Empty;
         public string FristName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
+        public ICollection<CousinCustomer>? CousinCustomers { get; set; } 
     }
 }

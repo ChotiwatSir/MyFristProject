@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace MyFristProject.Entities
 {
@@ -11,5 +8,9 @@ namespace MyFristProject.Entities
         public DateTime Created { get; set; }
         public DateTime? Updated { get; set; }
         public string CreateName { get; set; } = string.Empty;
+
+        public int CustomerDetailId { get; set; }
+        public CustomerDetail CustomerDetail { get; set; } = null!;
+        public string Name { get; set; } = string.Empty;
     }
 }
