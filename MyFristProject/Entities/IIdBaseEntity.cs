@@ -7,7 +7,7 @@ namespace MyFristProject.Entities
 {
     public interface IIdBaseEntity
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
     }
 
 }

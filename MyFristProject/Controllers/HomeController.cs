@@ -7,9 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace MyFristProject.Controllers
 {
     [ApiController]
-    [Route("Controller")]
-    public class HomeController:ControllerBase
+    [Route("[Controller]")]
+    public class HomeController : ControllerBase
     {
-        
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return Ok();
+        }
     }
 }
